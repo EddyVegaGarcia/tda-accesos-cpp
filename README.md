@@ -9,5 +9,9 @@ Desarrollar una aplicación que permita contabilizar la cantidad de personas que
 
 ### Primer aproximación
 
-Implementamos con programación estructurada una primera versión trivial de la solución.
- 
+Desarrollamos la aplicación básica definiendo e implementando la entidad `Molinete`.
+
+	* aplicación     : [`accesos.cpp`](./src/accesos.cpp)
+	* declaración    : [`Molinete.h`](./src/Molinete.h)
+ 	* implementación : [`Molinete.cpp`](./src/Molinete.cpp)
+ 	
