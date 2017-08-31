@@ -25,7 +25,8 @@ int main() {
 			case 'S' : entrada.dejarSalir();
 				break;
 
-			case 'T' : cout << "Total de personas en el interior: " << entrada.contarPersonasDentro() << endl;
+			case 'T' : cout << "Total de personas en el interior: "
+							<< entrada.contarPersonasDentro() << endl;
 				break;
 
 			default:
