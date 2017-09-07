@@ -16,8 +16,8 @@ class Molinete {
 
 		/*
 		 * pre : no existen personas dentro del lugar.
-		 * post: el Molinete queda habilitado para controlar el acceso de personas,
-		 *       considenrando que no existen aún personas dentro.
+		 * post: el Molinete queda habilitado para controlar el acceso de
+		 * 		 personas, considerando que no existen aún personas dentro.
 		 */
 		Molinete();
 
@@ -33,12 +33,14 @@ class Molinete {
 		void dejarSalir();
 
 		/*
-		 * post: devuelve la cantidad de personas que el Molinete dejo entrar pero no dejó salir.
+		 * post: devuelve la cantidad de personas que el Molinete dejo
+		 * 		 entrar pero no dejó salir.
 		 */
 		int contarPersonasDentro();
 
 		/*
-		 * post: indica si existen personas que hayan entrado y no hayan salido.
+		 * post: indica si existen personas que hayan entrado y
+		 * 		 no hayan salido.
 		 */
 		bool existenPersonasDentro();
 };
