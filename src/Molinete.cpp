@@ -2,28 +2,34 @@
 
 Molinete::Molinete() {
 
-	personasDentro = 0;
+	personasQueEntraron = 0;
+	personasQueSalieron = 0;
 }
 
 void Molinete::dejarEntrar() {
 
-	personasDentro++;
+	personasQueEntraron++;
 }
 
 void Molinete::dejarSalir() {
 
 	if (existenPersonasDentro()) {
 
-		personasDentro--;
+		personasQueSalieron++;
 	}
 }
 
 int Molinete::contarPersonasDentro() {
 
-	return personasDentro;
+	return personasQueEntraron - personasQueSalieron;
 }
 
 bool Molinete::existenPersonasDentro() {
 
-	return (personasDentro > 0);
+	return (contarPersonasDentro() > 0);
+}
+
+int Molinete::contarTotalDePersonasQueEntraron() {
+
+	return personasQueEntraron;
 }

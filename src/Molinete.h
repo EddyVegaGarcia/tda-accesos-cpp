@@ -10,7 +10,8 @@ class Molinete {
 
 	private:
 
-		int personasDentro;
+		int personasQueEntraron;
+		int personasQueSalieron;
 
 	public:
 
@@ -43,6 +44,12 @@ class Molinete {
 		 * 		 no hayan salido.
 		 */
 		bool existenPersonasDentro();
+
+		/*
+		 * post: indica la cantidad total de personas que
+		 *       alguna vez entraron.
+		 */
+		int contarTotalDePersonasQueEntraron();
 };
 
 #endif /* MOLINETE_H_ */
