@@ -4,11 +4,32 @@ Molinete::Molinete() {
 
 	personasQueEntraron = 0;
 	personasQueSalieron = 0;
+	maximaCantidadDePersonasDentro = 0;
 }
+
+Molinete::Molinete(int personasQueYaEstanDentro) {
+
+	if (personasQueYaEstanDentro > 0) {
+
+		personasQueEntraron = personasQueYaEstanDentro;
+	
+	} else {
+
+		personasQueEntraron = 0;
+	}
+	
+	personasQueSalieron = 0;
+	maximaCantidadDePersonasDentro = personasQueEntraron;
+}
+
 
 void Molinete::dejarEntrar() {
 
 	personasQueEntraron++;
+	
+	if (contarPersonasDentro() > maximaCantidadDePersonasDentro) {
+		maximaCantidadDePersonasDentro = contarPersonasDentro();
+	}
 }
 
 void Molinete::dejarSalir() {
@@ -32,4 +53,9 @@ bool Molinete::existenPersonasDentro() {
 int Molinete::contarTotalDePersonasQueEntraron() {
 
 	return personasQueEntraron;
+}
+
+int Molinete::calcularMaximaCantidadDePersonasDentro() {
+
+	return maximaCantidadDePersonasDentro;
 }

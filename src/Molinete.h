@@ -12,6 +12,7 @@ class Molinete {
 
 		int personasQueEntraron;
 		int personasQueSalieron;
+		int maximaCantidadDePersonasDentro;
 
 	public:
 
@@ -21,6 +22,16 @@ class Molinete {
 		 * 		 personas, considerando que no existen aún personas dentro.
 		 */
 		Molinete();
+
+		/*
+		 * pre : existen 'personasQueYaEstanDentro' personas
+		 * 		 dentro del lugar.
+		 * 		 'personasQueYaEstanDentro' es mayor a 0
+		 * post: el Molinete queda habilitado para controlar el acceso de personas,
+		 *       considerando que ya entraron tantas personas
+		 *       como lo indique 'personasQueYaEstanDentro'.
+		 */
+		Molinete(int personasQueYaEstanDentro);
 
 		/*
 		 * post: permite la entrada de una persona.
@@ -44,12 +55,18 @@ class Molinete {
 		 * 		 no hayan salido.
 		 */
 		bool existenPersonasDentro();
-
 		/*
 		 * post: indica la cantidad total de personas que
 		 *       alguna vez entraron.
 		 */
 		int contarTotalDePersonasQueEntraron();
+
+		/*
+		 * post: devuelve la maxima cantidad de personas
+		 * 		 que en algún momento estuvieron adentro.
+		 *
+		 */
+		int calcularMaximaCantidadDePersonasDentro();
 };
 
 #endif /* MOLINETE_H_ */

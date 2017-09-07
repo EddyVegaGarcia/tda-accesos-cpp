@@ -23,3 +23,11 @@ Cambiamos la implementación sin afecta la interfaz expuesta por la entidad.
 * declaración    : [`Molinete.h`](../punto-02/src/Molinete.h)
 * implementación : [`Molinete.cpp`](../punto-02/src/Molinete.cpp)
 
+### Punto 3 - Funcionalidad ampliada
+
+Incorporamos un segundo constructor y el cómputo de máxima cantida de personas dentro.
+
+* aplicación     : [`accesos.cpp`](../punto-03/src/accesos.cpp)
+* declaración    : [`Molinete.h`](../punto-03/src/Molinete.h)
+* implementación : [`Molinete.cpp`](../punto-03/src/Molinete.cpp)
+

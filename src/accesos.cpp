@@ -26,7 +26,11 @@ int main() {
 				break;
 
 			case 'T' : cout << "Total de personas en el interior: "
-							<< entrada.contarPersonasDentro() << endl;
+							<< entrada.contarPersonasDentro()
+							<< endl
+							<< "Máxima cantidad dentro: "
+							<< entrada.calcularMaximaCantidadDePersonasDentro()
+							<< endl;
 				break;
 
 			default:
